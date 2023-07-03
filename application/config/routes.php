@@ -53,23 +53,8 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-// Ruta para obtener todos los usuarios
-$route['api/users'] = 'api/users';
+$route['users'] = 'UserController/index';
+$route['users/create'] = 'UsersController/createUser';
+$route['users/verify'] = 'UsersController/verifyUser';
 
-// Ruta para obtener un usuario por ID
-$route['api/users/(:num)'] = 'api/getUser/$1';
 
-// Ruta para crear un nuevo usuario
-$route['api/users/create'] = 'api/createUser';
-
-// Ruta para actualizar un usuario existente
-$route['api/users/update/(:num)'] = 'api/updateUser/$1';
-
-// Ruta para eliminar un usuario existente
-$route['api/users/delete/(:num)'] = 'api/deleteUser/$1';
-
-// Ruta para cargar un archivo
-$route['api/files/upload'] = 'api/uploadFile';
-
-// Ruta para descargar un archivo
-$route['api/files/download/(:num)'] = 'api/downloadFile/$1';

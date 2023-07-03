@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 	<h1>Mi aplicacion</h1>
 
-	<form id="data" method="post" action="http://localhost/genera-beta/index.php/api/users/create">
+	<!-- <form id="data" method="POST" action="http://localhost/panel/api/index.php/users/create">
 		<label for="dataName">Name:</label>
 		<input id="dataName" type="text" name="name" required>
 		<label for="dataEmail">Email:</label>
@@ -19,11 +19,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<label for="dataRole">Role:</label>
 		<input id="dataRole" type="text" name="role" required>
 		<input type="submit" value="Registrar">
-	</form>
+	</form> -->
 
-	<form method="get" action="http://localhost/genera-beta/index.php/api/users/2">
-		<input type="submit" value="Mostrar usuarios">
-	</form>
+	<!-- <form method="POST" action="http://localhost/panel/api/index.php/users/verify">
+		<label for="">Email</label>
+		<input type="email" name="emailVerify"/>
+		<label for="">Passwrd</label>
+		<input type="password" name="passwordVerify">
+		<input type="submit" value="entrar">
+	</form> -->
 	
 </body>
 </html>
